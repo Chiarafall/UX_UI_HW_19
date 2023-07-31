@@ -14,6 +14,149 @@ a:-webkit-any-link {
 }
 
 
+/* Navigation styles */
+
+nav { /* this is not right, it should be nav{} */
+    width: 73%;
+    padding: 1%;
+    position: fixed;
+    background-color: #E4DDDE;
+
+}
+
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+h1 {
+    font-family:raleway, arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #79595D;
+    padding: 3%
+}
+h2 {
+    font-family:raleway, arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: oblique;
+    color: #79595D;
+    padding: 3% 
+}
+
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    background-color: #E4DDDE;
+
+
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+    font-family: anonymous pro, Courier, monospace; /* now it is working! */
+    font-size: 18px;
+    color: #79595D;
+
+}
+
+a:-webkit-any-link {
+    color: #79595D;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.HoverMenu {
+    transition: 0.3s;
+
+}
+
+.HoverMenu:hover {
+  font-size: 22px;
+
+}
+
+/* Navigation styles END*/
+
+p {
+    font-family: anonymous pro, Courier, monospace; 
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #79595D;
+    padding-top: 3%;
+    margin-top: 3%; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    text-align: center;
+    
+}
+
+/* Hero section styles */
+.hero {
+    margin-top: 80px;
+    margin-right: 124px;
+    margin-left: 124px;
+    margin-top: 20px;
+
+
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 80px 310px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "Hello.Chiara" "intro2"
+    "intro1" "intro2";
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+    justify-items: start;
+    margin-top: 72px;
+}
+
+.Hello.Chiara {
+   padding: 3%;
+   margin:0px;
+   text-align: left;
+}
+
+.intro2 {
+    font-family: anonymous pro, Courier, monospace; /* now is working! */
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #79595D;
+    padding: 3%;
+    padding-right: 0%;
+    margin:0px;
+    text-align: left;
+}
+
+.intro1 {
+    font-family:raleway, arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 125%;
+    color: #79595D;
+    padding: 3%;
+    margin:0px;
+    text-align: left;
+
+
+}
+
+
+
 body {
     background-color: #E4DDDE;
     align-items: center;
@@ -39,20 +182,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 }
 
-p {
-    font-family: anonymous pro, Courier, monospace; 
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    color: #79595D;
-    padding-top: 3%;
-    margin-top: 3%; 
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 3%;
-    text-align: center;
-    
-}
+
 
 .arrowed-title {
     font-family: anonymous pro, Courier, monospace; 
@@ -171,31 +301,65 @@ footer {
     "footer1 footer3 footer5"
     "copy-footer footer4 footer5";
     text-align: start;
+    align-items: start;
+    justify-content: start;
+    justify-items: start;
 }
 
 .footer1 {
+    font-family:raleway, arial, sans-serif;
     color: #E4DDDE;
     grid-area: footer1;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 3%;
+    text-align: start;
+
 }
 
 .copy-footer {
+    font-family:raleway, arial, sans-serif;
     color: #E4DDDE;
     grid-area: copy-footer;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 3%;
+    text-align: start;
 }
 
 .footer3 {
+    font-family:raleway, arial, sans-serif;
     color: #E4DDDE;
     grid-area: footer3;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 3%;
+    text-align: start;
 }
 
 .footer4 {
+    font-family:raleway, arial, sans-serif;
     color: #E4DDDE;
     grid-area: footer4;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 3%;
+    text-align: start;
 }
 
 .footer5 {
+    font-family:raleway, arial, sans-serif;
     color: #E4DDDE;
     grid-area: footer5;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    text-align: start;
 }
 
 ul {
@@ -203,6 +367,17 @@ ul {
 }
 li {
     padding: 1%;
+}
+#contacts{
+    display: flex;
+    margin-top: 3%;
+    margin-left: -13%;
+    margin-right: 0%;
+    margin-bottom: 3%;
+    text-align: justify;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
 
