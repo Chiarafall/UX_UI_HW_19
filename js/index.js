@@ -7,7 +7,7 @@ function fade() {
 
 // Arrow bouncing on hover (not working):
 function bounce(){
-  $(".center-arrow").bounce("slow");
+  $(".center-arrow").bounce();
   setTimeout(isFinite);
   
 }
@@ -16,7 +16,6 @@ function bounce(){
 ScrollReveal().reveal('#rogen')
 ScrollReveal().reveal('#cbc', { delay: 500 })
 ScrollReveal().reveal('#healink', { delay: 800})
-ScrollReveal().reveal('#ComingSoon', { delay: 1000})
+ScrollReveal().reveal('#ComingSoon', { delay: 1500})
 
 ScrollReveal({ reset: true });
-

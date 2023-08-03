@@ -33,25 +33,35 @@ a:-webkit-any-link {
 
 /* Navigation styles */
 
-nav { /* this is not right, it should be nav{} */
+nav { 
     width: 73%;
-    padding: 1%;
+    padding: 3%;
+    padding-left: 5%;
     position: fixed;
     background-color: transparent;
-
 }
 
 .inline-block {
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
+    margin-top: 16px;
+}
+
+.inline-block-list{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    padding-left: 40px;
 }
 
 .logo {
     width: 23%;
-    padding: 1%;
-    text-align: center;
+    padding: 3%;
+    text-align: LEFT;
     background-color: transparent;
+    margin-left: 50px;
+    margin-right: -120px;
 }
 
 h1 {
